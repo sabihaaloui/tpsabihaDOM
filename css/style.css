@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    transition: color 0.5s ease;
+}
+
+.traffic-light {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.light {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 10px;
+    background-color: grey;
+}
+
+.red {
+    background-color: red;
+}
+
+.orange {
+    background-color: grey;
+}
+
+.green {
+    background-color: grey;
+}
+
+.road {
+    position: relative;
+    width: 50%;
+    height: 80px;
+    background-color: lightgrey;
+    border: 1px solid black;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.car, .bicycle, .pedestrian {
+    font-size: 30px;  /* Taille réduite des objets */
+    transition: transform 1.5s ease;
+}
+
+.hidden {
+    opacity: 0.3;
+}
+
+.moving {
+    transform: translateX(100px);  /* Distance de déplacement réduite */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}

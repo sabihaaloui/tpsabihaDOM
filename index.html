@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulation de Feux de Signalisation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1 id="status-text">Feu Rouge : La voiture bouge</h1>
+
+    <!-- Feu de signalisation -->
+    <div class="traffic-light">
+        <div id="red-light" class="light red"></div>
+        <div id="orange-light" class="light orange"></div>
+        <div id="green-light" class="light green"></div>
+    </div>
+
+    <!-- Routes compactes -->
+    <div class="road road-car">
+        <div class="car">🚗</div>
+    </div>
+
+    <div class="road road-bicycle">
+        <div class="bicycle">🚲</div>
+    </div>
+
+    <div class="road road-pedestrian">
+        <div class="pedestrian">🚶</div>
+    </div>
+
+    <button id="toggle-light">Changer Feu</button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
